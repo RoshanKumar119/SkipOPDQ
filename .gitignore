@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+server/.mongodb-binaries/
+
+# AI assistant docs
+CLAUDE.md
+AI_HANDOFF.md
+.claude/

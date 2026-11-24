@@ -1,0 +1,19 @@
+{
+  "name": "skipopdq",
+  "version": "0.6.0",
+  "private": true,
+  "description": "SkipOPDQ – Smart Hospital Doctor Availability & OPD Queue Management Platform. Skip the OPD queue. Arrive when it's your turn.",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -k -n server,client -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm start --prefix server",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
